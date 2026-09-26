@@ -1,0 +1,11 @@
+{
+  "agent_id": "AGENT-001",
+  "mode": "TEST",
+  "cash_chf": 50.0,
+  "positions": {"BTC": 0.0, "ETH": 0.0},
+  "fees_paid_chf": 0.0,
+  "trade_count": 0,
+  "cycle_count": 0,
+  "last_signal": {"BTC": "HOLD", "ETH": "HOLD"},
+  "status": "NORMAL"
+}
