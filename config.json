@@ -1,0 +1,11 @@
+{
+  "initial_capital_chf": 50.0,
+  "fee_rate": 0.006,
+  "slippage_bps": 5.0,
+  "fast_ma_period": 5,
+  "slow_ma_period": 20,
+  "signal_threshold_pct": 0.20,
+  "max_total_exposure_pct": 0.40,
+  "max_buy_pct": 0.10,
+  "real_money_enabled": false
+}
