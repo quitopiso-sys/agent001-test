@@ -2,6 +2,7 @@
 import csv, json, math, urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
+from string import Template
 
 BASE=Path(__file__).resolve().parent
 STATE=BASE/'state.json'; CONFIG=BASE/'config.json'; HIST=BASE/'price_history.json'; CYCLES=BASE/'cycles.csv'; TRADES=BASE/'trades.csv'; INDEX=BASE/'index.html'; SUMMARY=BASE/'summary.json'
@@ -10,7 +11,7 @@ def now(): return datetime.now(timezone.utc).isoformat()
 def load(p,d): return json.loads(p.read_text()) if p.exists() else d
 def save(p,x): p.write_text(json.dumps(x,indent=2),encoding='utf-8')
 def get_json(url):
-    r=urllib.request.Request(url,headers={'User-Agent':'AGENT-001-paper/1.0'})
+    r=urllib.request.Request(url,headers={'User-Agent':'AGENT-001-paper/2.0'})
     with urllib.request.urlopen(r,timeout=15) as f: return json.loads(f.read().decode())
 
 def prices_chf():
@@ -65,10 +66,55 @@ def tail(path,n=20):
     if not path.exists(): return []
     with path.open(encoding='utf-8') as f: return list(csv.DictReader(f))[-n:]
 
+def spark(values,w=420,h=100):
+    vals=[float(v) for v in values]
+    if not vals: vals=[0.0,0.0]
+    if len(vals)==1: vals=[vals[0],vals[0]]
+    lo,hi=min(vals),max(vals)
+    if hi==lo:
+        pad=max(abs(hi)*0.002,1.0); lo-=pad; hi+=pad
+    pts=[]
+    for i,v in enumerate(vals):
+        x=i*w/max(1,len(vals)-1)
+        y=h-8-(v-lo)/(hi-lo)*(h-16)
+        pts.append(f'{x:.1f},{y:.1f}')
+    line=' '.join(pts)
+    area=f'0,{h} {line} {w},{h}'
+    return f'<svg viewBox="0 0 {w} {h}" width="100%" height="{h}" preserveAspectRatio="none"><defs><linearGradient id="fillg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#57e3d0" stop-opacity=".32"/><stop offset="100%" stop-color="#57e3d0" stop-opacity=".02"/></linearGradient></defs><polygon points="{area}" fill="url(#fillg)"/><polyline points="{line}" fill="none" stroke="#57e3d0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+
+def badge_class(s):
+    return {'NORMAL':'normal','DEFENSIVE':'defensive','SURVIVAL':'survival','CRITICAL':'critical','DEAD':'dead'}.get(s,'normal')
+
 def page(sumry):
-    rows=''.join(f"<tr><td>{r['timestamp'][:19].replace('T',' ')}</td><td>#{r['cycle']}</td><td>{r['btc_signal']} / {r['btc_action']}</td><td>{r['eth_signal']} / {r['eth_action']}</td><td>CHF {float(r['equity_chf']):.2f}</td><td>{r['status']}</td></tr>" for r in reversed(tail(CYCLES,25))) or "<tr><td colspan=6>Esperando ciclo</td></tr>"
-    trs=''.join(f"<tr><td>{r['timestamp'][:19].replace('T',' ')}</td><td>{r['symbol']}</td><td>{r['side']}</td><td>CHF {float(r['notional_chf']):.2f}</td><td>CHF {float(r['fee_chf']):.4f}</td><td>CHF {float(r['equity_after_chf']):.2f}</td></tr>" for r in reversed(tail(TRADES,20))) or "<tr><td colspan=6>Sin operaciones todavía</td></tr>"
-    html=f'''<!doctype html><html lang="es"><head><meta charset="utf-8"><meta http-equiv="refresh" content="60"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AGENT #001</title><style>body{{font-family:system-ui;background:#0b0e13;color:#eef;padding:22px}}.wrap{{max-width:1050px;margin:auto}}.grid{{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}}.card,table{{background:#151a23;border:1px solid #293140;border-radius:12px}}.card{{padding:14px}}.v{{font-size:24px;font-weight:700}}.l{{opacity:.65;font-size:12px}}table{{width:100%;border-collapse:collapse}}td,th{{padding:9px;border-bottom:1px solid #293140;text-align:left;font-size:13px}}.live{{padding:7px 10px;border:1px solid #2b3544;border-radius:999px;display:inline-block}}</style></head><body><div class="wrap"><h1>AGENT #001</h1><p class="live">● TEST MODE — {sumry['status']}</p><div class="grid"><div class="card"><div class="l">Patrimonio</div><div class="v">CHF {sumry['equity_chf']:.2f}</div></div><div class="card"><div class="l">Resultado</div><div class="v">CHF {sumry['pnl_chf']:+.2f}</div></div><div class="card"><div class="l">Ciclos</div><div class="v">{sumry['cycle_count']}</div></div><div class="card"><div class="l">Trades</div><div class="v">{sumry['trade_count']}</div></div><div class="card"><div class="l">BTC</div><div class="v">CHF {sumry['prices']['BTC']:,.0f}</div><div>{sumry['signals']['BTC']} / {sumry['actions']['BTC']}</div></div><div class="card"><div class="l">ETH</div><div class="v">CHF {sumry['prices']['ETH']:,.0f}</div><div>{sumry['signals']['ETH']} / {sumry['actions']['ETH']}</div></div></div><h2>Actividad de cada ciclo</h2><div style="overflow:auto"><table><tr><th>UTC</th><th>Ciclo</th><th>BTC</th><th>ETH</th><th>Patrimonio</th><th>Estado</th></tr>{rows}</table></div><h2>Operaciones simuladas</h2><div style="overflow:auto"><table><tr><th>UTC</th><th>Activo</th><th>Lado</th><th>Importe</th><th>Fee</th><th>Patrimonio</th></tr>{trs}</table></div><p>Dinero real BLOQUEADO · Coinbase privado NO conectado · 0 CHF gastados</p></div></body></html>'''
+    cycles=tail(CYCLES,30)
+    trades=tail(TRADES,20)
+    hist=load(HIST,[])[-30:]
+    cycle_rows=''.join(
+        f"<tr><td>{r['timestamp'][:19].replace('T',' ')}</td><td>#{r['cycle']}</td><td><b>{r['btc_signal']}</b><span>{r['btc_action']}</span></td><td><b>{r['eth_signal']}</b><span>{r['eth_action']}</span></td><td>CHF {float(r['equity_chf']):.2f}</td><td><em class='{badge_class(r['status'])}'>{r['status']}</em></td></tr>"
+        for r in reversed(cycles)
+    ) or '<tr><td colspan="6">Esperando ciclo</td></tr>'
+    trade_rows=''.join(
+        f"<tr><td>{r['timestamp'][:19].replace('T',' ')}</td><td>{r['symbol']}</td><td>{r['side']}</td><td>CHF {float(r['notional_chf']):.2f}</td><td>CHF {float(r['fee_chf']):.4f}</td><td>CHF {float(r['equity_after_chf']):.2f}</td></tr>"
+        for r in reversed(trades)
+    ) or '<tr><td colspan="6">Todavía no ha ejecutado ninguna operación.</td></tr>'
+    eq_vals=[float(r['equity_chf']) for r in cycles] or [sumry['equity_chf']]
+    btc_vals=[float(r['BTC']) for r in hist if 'BTC' in r] or [sumry['prices']['BTC']]
+    eth_vals=[float(r['ETH']) for r in hist if 'ETH' in r] or [sumry['prices']['ETH']]
+    tpl=Template('''<!doctype html><html lang="es"><head><meta charset="utf-8"><meta http-equiv="refresh" content="60"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AGENT #001</title>
+<style>*{box-sizing:border-box}:root{color-scheme:dark}body{margin:0;padding:24px;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;color:#eef4fa;background:radial-gradient(circle at top,#122239 0,#090e16 48%,#060a10 100%)}.wrap{max-width:1180px;margin:auto}.top{display:flex;justify-content:space-between;gap:16px;align-items:flex-start;flex-wrap:wrap;margin-bottom:20px}h1{margin:0;font-size:38px;letter-spacing:-.04em}.sub{color:#92a1b7;margin-top:8px}.live,.badge,em{display:inline-flex;align-items:center;border:1px solid #2b3850;background:#0d1520;border-radius:999px}.live,.badge{padding:9px 13px;gap:9px;font-weight:700}.dot{width:9px;height:9px;border-radius:50%;background:#56e39a;box-shadow:0 0 12px #56e39a}.normal{color:#74efaa}.defensive{color:#ffd166}.survival{color:#ffb454}.critical,.dead{color:#ff7777}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px}.card,.chart,.tablebox{background:rgba(18,26,40,.88);border:1px solid #253248;border-radius:18px;box-shadow:0 18px 40px rgba(0,0,0,.18)}.card{padding:16px}.hero{grid-column:span 2}.label{font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:#8493aa}.value{font-size:30px;font-weight:800;margin-top:6px;letter-spacing:-.03em}.small{font-size:13px;color:#94a5bb;margin-top:4px}.section{display:flex;justify-content:space-between;gap:12px;align-items:end;margin:28px 0 12px}.section h2{margin:0;font-size:22px}.two{display:grid;grid-template-columns:1.2fr .8fr;gap:14px}.twoeq{display:grid;grid-template-columns:1fr 1fr;gap:14px}.chart{padding:16px}.tablebox{overflow:auto}table{width:100%;border-collapse:collapse}th,td{padding:12px 10px;text-align:left;border-bottom:1px solid #253248;font-size:13px;vertical-align:top}th{color:#8796ab;font-weight:600}td span{display:block;color:#8697ad;margin-top:3px;font-size:12px}em{font-style:normal;padding:4px 8px;font-size:11px;font-weight:800}.foot{margin:18px 0 4px;color:#6f8097;font-size:12px;text-align:right}@media(max-width:850px){.two,.twoeq{grid-template-columns:1fr}.hero{grid-column:span 1}h1{font-size:30px}}</style></head><body><div class="wrap">
+<div class="top"><div><h1>AGENT #001</h1><div class="sub">Simulación en tiempo real · actualización automática cada ~15 min</div></div><div style="display:flex;gap:10px;flex-wrap:wrap"><div class="live"><span class="dot"></span>LIVE TEST</div><div class="badge $status_class">$status</div></div></div>
+<div class="grid"><div class="card hero"><div class="label">Patrimonio</div><div class="value">CHF $equity</div><div class="small">Última actualización: $updated UTC</div></div><div class="card"><div class="label">Resultado</div><div class="value">CHF $pnl</div></div><div class="card"><div class="label">Ciclos</div><div class="value">$cycles</div></div><div class="card"><div class="label">Trades</div><div class="value">$trades</div></div><div class="card"><div class="label">Fees</div><div class="value">CHF $fees</div></div></div>
+<div class="section"><h2>Rendimiento</h2><div class="small">evolución reciente del patrimonio</div></div><div class="two"><div class="chart"><div class="label">Patrimonio reciente</div>$eq_chart</div><div class="chart"><div class="label">Mercado y decisión actual</div><div class="grid" style="margin-top:12px"><div class="card"><div class="label">BTC</div><div class="value" style="font-size:23px">CHF $btc_price</div><div class="small">Señal: $btc_signal · Acción: $btc_action</div></div><div class="card"><div class="label">ETH</div><div class="value" style="font-size:23px">CHF $eth_price</div><div class="small">Señal: $eth_signal · Acción: $eth_action</div></div></div></div></div>
+<div class="section"><h2>Movimiento del mercado</h2><div class="small">últimos ciclos registrados</div></div><div class="twoeq"><div class="chart"><div class="label">BTC</div>$btc_chart</div><div class="chart"><div class="label">ETH</div>$eth_chart</div></div>
+<div class="section"><h2>Actividad de cada ciclo</h2><div class="small">incluye ciclos sin operación</div></div><div class="tablebox"><table><tr><th>UTC</th><th>Ciclo</th><th>BTC</th><th>ETH</th><th>Patrimonio</th><th>Estado</th></tr>$cycle_rows</table></div>
+<div class="section"><h2>Operaciones simuladas</h2><div class="small">solo aparece cuando ejecuta trades</div></div><div class="tablebox"><table><tr><th>UTC</th><th>Activo</th><th>Lado</th><th>Importe</th><th>Fee</th><th>Patrimonio</th></tr>$trade_rows</table></div><div class="foot">AGENT #001 · Dashboard público</div></div></body></html>''')
+    html=tpl.safe_substitute(
+        status_class=badge_class(sumry['status']), status=sumry['status'], equity=f"{sumry['equity_chf']:.2f}", pnl=f"{sumry['pnl_chf']:+.2f}",
+        updated=sumry['timestamp'][:19].replace('T',' '), cycles=sumry['cycle_count'], trades=sumry['trade_count'], fees=f"{sumry['fees_paid_chf']:.4f}",
+        eq_chart=spark(eq_vals,430,115), btc_price=f"{sumry['prices']['BTC']:,.2f}", eth_price=f"{sumry['prices']['ETH']:,.2f}",
+        btc_signal=sumry['signals']['BTC'], eth_signal=sumry['signals']['ETH'], btc_action=sumry['actions']['BTC'], eth_action=sumry['actions']['ETH'],
+        btc_chart=spark(btc_vals,430,90), eth_chart=spark(eth_vals,430,90), cycle_rows=cycle_rows, trade_rows=trade_rows
+    )
     INDEX.write_text(html,encoding='utf-8')
 
 def main():
