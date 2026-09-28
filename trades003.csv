@@ -1,0 +1,2 @@
+timestamp,symbol,side,notional_chf,fee_chf,equity_after_chf,reason
+2026-09-28T17:02:07.293155+00:00,LINK,BUY,23.60834990,0.14165010,49.84655162,VELOCITY score +21.30; fast +6.15%; med +4.97%; long +11.38%

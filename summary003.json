@@ -1,14 +1,14 @@
 {
-  "timestamp": "2026-09-28T16:48:52.853448+00:00",
+  "timestamp": "2026-09-28T17:02:07.293292+00:00",
   "agent_id": "AGENT-003",
   "status": "HUNTING",
   "initial_capital_chf": 50.0,
-  "equity_chf": 50.0,
-  "pnl_chf": 0.0,
-  "cycle_count": 24,
-  "trade_count": 0,
-  "fees_paid_chf": 0.0,
-  "exposure_pct": 0.0,
+  "equity_chf": 49.846551624784034,
+  "pnl_chf": -0.15344837521596588,
+  "cycle_count": 25,
+  "trade_count": 1,
+  "fees_paid_chf": 0.14165009940357853,
+  "exposure_pct": 47.33838320934456,
   "max_total_exposure_pct": 0.95,
   "symbols": [
     "BTC",
@@ -21,89 +21,89 @@
     "AVAX"
   ],
   "prices": {
-    "BTC": 69533.99506925,
-    "ETH": 2229.87318125,
-    "SOL": 99.05003109999998,
-    "XRP": 1.2459013567666666,
-    "LINK": 12.427410703,
-    "DOGE": 0.07816719079,
-    "ADA": 0.2039216425333333,
-    "AVAX": 8.655858301333332
+    "BTC": 69519.5097795,
+    "ETH": 2231.7427460900003,
+    "SOL": 98.88283856,
+    "XRP": 1.2420243484000002,
+    "LINK": 12.677265667,
+    "DOGE": 0.07823788522000001,
+    "ADA": 0.20393753666000003,
+    "AVAX": 8.666388753000001
   },
   "actions": {
     "BTC": "HOLD",
     "ETH": "HOLD",
     "SOL": "HOLD",
     "XRP": "HOLD",
-    "LINK": "HOLD",
+    "LINK": "BUY CHF 23.61",
     "DOGE": "HOLD",
     "ADA": "HOLD",
     "AVAX": "HOLD"
   },
   "metrics": {
     "BTC": {
-      "ready": false,
-      "fast": 0.0,
-      "medium": 0.0,
-      "long": 0.0,
+      "ready": true,
+      "fast": 0.3872670093329589,
+      "medium": 0.22569739957827295,
+      "long": 0.9172517079942599,
       "breakout": false,
-      "score": -999.0
+      "score": 1.289678699575303
     },
     "ETH": {
-      "ready": false,
-      "fast": 0.0,
-      "medium": 0.0,
-      "long": 0.0,
+      "ready": true,
+      "fast": 0.3085069283044417,
+      "medium": -0.004387155039209389,
+      "long": 1.5992921681890593,
       "breakout": false,
-      "score": -999.0
+      "score": 1.1906421831844094
     },
     "SOL": {
-      "ready": false,
-      "fast": 0.0,
-      "medium": 0.0,
-      "long": 0.0,
+      "ready": true,
+      "fast": 0.33769705909960646,
+      "medium": -0.5453993276450464,
+      "long": 0.7148638899994175,
       "breakout": false,
-      "score": -999.0
+      "score": 0.34840093473401224
     },
     "XRP": {
-      "ready": false,
-      "fast": 0.0,
-      "medium": 0.0,
-      "long": 0.0,
+      "ready": true,
+      "fast": 0.014683397682002663,
+      "medium": -1.7600331843989236,
+      "long": 1.401878840016857,
       "breakout": false,
-      "score": -999.0
+      "score": -1.172851532564576
     },
     "LINK": {
-      "ready": false,
-      "fast": 0.0,
-      "medium": 0.0,
-      "long": 0.0,
-      "breakout": false,
-      "score": -999.0
+      "ready": true,
+      "fast": 6.153798983284164,
+      "medium": 4.969550393281619,
+      "long": 11.378164280365755,
+      "breakout": true,
+      "score": 21.29765427533942
     },
     "DOGE": {
-      "ready": false,
-      "fast": 0.0,
-      "medium": 0.0,
-      "long": 0.0,
+      "ready": true,
+      "fast": 0.9715462673745456,
+      "medium": 0.13907063904730066,
+      "long": 1.5421804025034458,
       "breakout": false,
-      "score": -999.0
+      "score": 2.504726081322861
     },
     "ADA": {
-      "ready": false,
-      "fast": 0.0,
-      "medium": 0.0,
-      "long": 0.0,
+      "ready": true,
+      "fast": 0.5232018246680292,
+      "medium": -1.7845690816977289,
+      "long": 0.9540439674702972,
       "breakout": false,
-      "score": -999.0
+      "score": -0.4611882103071574
     },
     "AVAX": {
-      "ready": false,
-      "fast": 0.0,
-      "medium": 0.0,
-      "long": 0.0,
+      "ready": true,
+      "fast": 0.7825526623222334,
+      "medium": -0.6488609370933429,
+      "long": 0.16761125795983212,
       "breakout": false,
-      "score": -999.0
+      "score": 0.8267783582706101
     }
   },
   "real_money_enabled": false
