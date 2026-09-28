@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-09-28T16:08:14.672833+00:00",
+  "timestamp": "2026-09-28T16:28:59.684601+00:00",
   "agent_id": "AGENT-002",
   "status": "HUNTING",
   "initial_capital_chf": 50.0,
-  "equity_chf": 49.42394169691778,
-  "pnl_chf": -0.5760583030822204,
-  "cycle_count": 29,
-  "trade_count": 6,
-  "fees_paid_chf": 0.7186497080888752,
+  "equity_chf": 49.16880995800864,
+  "pnl_chf": -0.8311900419913627,
+  "cycle_count": 30,
+  "trade_count": 8,
+  "fees_paid_chf": 0.9541649823732938,
   "profit_deadline_cycles": 300,
   "symbols": [
     "BTC",
@@ -17,54 +17,54 @@
     "LINK"
   ],
   "prices": {
-    "BTC": 69387.28743083001,
-    "ETH": 2227.41692943,
-    "SOL": 98.77112224,
-    "XRP": 1.246286566,
-    "LINK": 12.140894431
+    "BTC": 69889.07202851666,
+    "ETH": 2240.8904903266666,
+    "SOL": 99.89918434,
+    "XRP": 1.2624969310666665,
+    "LINK": 12.442095117333333
   },
   "actions": {
-    "BTC": "HOLD",
+    "BTC": "BUY CHF 19.60",
     "ETH": "HOLD",
     "SOL": "HOLD",
     "XRP": "HOLD",
-    "LINK": "HOLD"
+    "LINK": "BUY CHF 19.65"
   },
   "metrics": {
     "BTC": {
       "ready": true,
-      "fast": 0.5931581673225717,
-      "slow": 0.5124205143115512,
-      "breakout": false,
-      "score": 0.8749894501939248
+      "fast": 1.284154145058558,
+      "slow": 1.2952405723453353,
+      "breakout": true,
+      "score": 1.9965364598484925
     },
     "ETH": {
       "ready": true,
-      "fast": 0.4866147024739309,
-      "slow": 0.6099728261292681,
+      "fast": 1.1550366208437746,
+      "slow": 1.1882480593509825,
       "breakout": false,
-      "score": 0.8220997568450283
+      "score": 1.808573053486815
     },
     "SOL": {
       "ready": true,
-      "fast": 0.6223731645940589,
-      "slow": 0.14388095390078792,
+      "fast": 1.8707961948925211,
+      "slow": 1.2983784196814563,
       "breakout": false,
-      "score": 0.7015076892394922
+      "score": 2.5849043257173223
     },
     "XRP": {
       "ready": true,
-      "fast": 0.9108842402543837,
-      "slow": 0.7640005912746162,
+      "fast": 2.3624960166101827,
+      "slow": 1.982590757898195,
       "breakout": false,
-      "score": 1.3310845654554226
+      "score": 3.45292093345419
     },
     "LINK": {
       "ready": true,
-      "fast": 2.5918223743627067,
-      "slow": 4.417885947824218,
-      "breakout": false,
-      "score": 5.021659645666027
+      "fast": 5.461972571607054,
+      "slow": 6.851556343454668,
+      "breakout": true,
+      "score": 9.230328560507122
     }
   },
   "failed": false
