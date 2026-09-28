@@ -27,8 +27,14 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Snapshot dashboard state
+        run: python3 dashboard_enhancer.py pre 001
+
       - name: Run paper-trading cycle
         run: python3 agent001.py
+
+      - name: Build rich dashboard
+        run: python3 dashboard_enhancer.py post 001
 
       - name: Persist state and dashboard
         run: |
