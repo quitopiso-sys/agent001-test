@@ -21,15 +21,16 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-
+      - name: Snapshot dashboard state
+        run: python3 dashboard_enhancer.py pre 003
       - name: Run AGENT-003 cycle
         run: python3 agent003.py
-
+      - name: Build rich dashboard
+        run: python3 dashboard_enhancer.py post 003
       - name: Persist AGENT-003 state and dashboard
         run: |
           git config user.name "agent003-bot"
