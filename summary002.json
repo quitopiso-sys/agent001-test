@@ -1,0 +1,71 @@
+{
+  "timestamp": "2026-09-28T07:28:06.701962+00:00",
+  "agent_id": "AGENT-002",
+  "status": "HUNTING",
+  "initial_capital_chf": 50.0,
+  "equity_chf": 50.0,
+  "pnl_chf": 0.0,
+  "cycle_count": 1,
+  "trade_count": 0,
+  "fees_paid_chf": 0,
+  "profit_deadline_cycles": 300,
+  "symbols": [
+    "BTC",
+    "ETH",
+    "SOL",
+    "XRP",
+    "LINK"
+  ],
+  "prices": {
+    "BTC": 68842.18061952,
+    "ETH": 2194.3307232933334,
+    "SOL": 98.12348364,
+    "XRP": 1.2213745628000001,
+    "LINK": 11.356815484
+  },
+  "actions": {
+    "BTC": "HOLD",
+    "ETH": "HOLD",
+    "SOL": "HOLD",
+    "XRP": "HOLD",
+    "LINK": "HOLD"
+  },
+  "metrics": {
+    "BTC": {
+      "ready": false,
+      "fast": 0,
+      "slow": 0,
+      "breakout": false,
+      "score": -999
+    },
+    "ETH": {
+      "ready": false,
+      "fast": 0,
+      "slow": 0,
+      "breakout": false,
+      "score": -999
+    },
+    "SOL": {
+      "ready": false,
+      "fast": 0,
+      "slow": 0,
+      "breakout": false,
+      "score": -999
+    },
+    "XRP": {
+      "ready": false,
+      "fast": 0,
+      "slow": 0,
+      "breakout": false,
+      "score": -999
+    },
+    "LINK": {
+      "ready": false,
+      "fast": 0,
+      "slow": 0,
+      "breakout": false,
+      "score": -999
+    }
+  },
+  "failed": false
+}

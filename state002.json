@@ -1,0 +1,34 @@
+{
+  "cash": 50.0,
+  "pos": {
+    "BTC": {
+      "qty": 0,
+      "entry": 0,
+      "peak": 0
+    },
+    "ETH": {
+      "qty": 0,
+      "entry": 0,
+      "peak": 0
+    },
+    "SOL": {
+      "qty": 0,
+      "entry": 0,
+      "peak": 0
+    },
+    "XRP": {
+      "qty": 0,
+      "entry": 0,
+      "peak": 0
+    },
+    "LINK": {
+      "qty": 0,
+      "entry": 0,
+      "peak": 0
+    }
+  },
+  "fees": 0,
+  "trades": 0,
+  "cycles": 1,
+  "failed": false
+}
