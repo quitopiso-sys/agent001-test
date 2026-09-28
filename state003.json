@@ -1,0 +1,48 @@
+{
+  "cash": 50.0,
+  "pos": {
+    "BTC": {
+      "qty": 0.0,
+      "entry": 0.0,
+      "peak": 0.0
+    },
+    "ETH": {
+      "qty": 0.0,
+      "entry": 0.0,
+      "peak": 0.0
+    },
+    "SOL": {
+      "qty": 0.0,
+      "entry": 0.0,
+      "peak": 0.0
+    },
+    "XRP": {
+      "qty": 0.0,
+      "entry": 0.0,
+      "peak": 0.0
+    },
+    "LINK": {
+      "qty": 0.0,
+      "entry": 0.0,
+      "peak": 0.0
+    },
+    "DOGE": {
+      "qty": 0.0,
+      "entry": 0.0,
+      "peak": 0.0
+    },
+    "ADA": {
+      "qty": 0.0,
+      "entry": 0.0,
+      "peak": 0.0
+    },
+    "AVAX": {
+      "qty": 0.0,
+      "entry": 0.0,
+      "peak": 0.0
+    }
+  },
+  "fees": 0.0,
+  "trades": 0,
+  "cycles": 1
+}

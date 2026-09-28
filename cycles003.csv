@@ -1,0 +1,2 @@
+timestamp,cycle,equity_chf,pnl_chf,status,exposure_pct,actions
+2026-09-28T07:48:37.923619+00:00,1,50.00000000,0.00000000,HUNTING,0.00,"{""BTC"":""HOLD"",""ETH"":""HOLD"",""SOL"":""HOLD"",""XRP"":""HOLD"",""LINK"":""HOLD"",""DOGE"":""HOLD"",""ADA"":""HOLD"",""AVAX"":""HOLD""}"

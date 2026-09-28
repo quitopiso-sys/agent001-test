@@ -1,0 +1,110 @@
+{
+  "timestamp": "2026-09-28T07:48:37.923698+00:00",
+  "agent_id": "AGENT-003",
+  "status": "HUNTING",
+  "initial_capital_chf": 50.0,
+  "equity_chf": 50.0,
+  "pnl_chf": 0.0,
+  "cycle_count": 1,
+  "trade_count": 0,
+  "fees_paid_chf": 0.0,
+  "exposure_pct": 0.0,
+  "max_total_exposure_pct": 0.95,
+  "symbols": [
+    "BTC",
+    "ETH",
+    "SOL",
+    "XRP",
+    "LINK",
+    "DOGE",
+    "ADA",
+    "AVAX"
+  ],
+  "prices": {
+    "BTC": 68887.63675476999,
+    "ETH": 2196.6124944999997,
+    "SOL": 98.1809782,
+    "XRP": 1.2248533879333332,
+    "LINK": 11.382182269666664,
+    "DOGE": 0.07704964075999998,
+    "ADA": 0.20201026986666665,
+    "AVAX": 8.651887215999999
+  },
+  "actions": {
+    "BTC": "HOLD",
+    "ETH": "HOLD",
+    "SOL": "HOLD",
+    "XRP": "HOLD",
+    "LINK": "HOLD",
+    "DOGE": "HOLD",
+    "ADA": "HOLD",
+    "AVAX": "HOLD"
+  },
+  "metrics": {
+    "BTC": {
+      "ready": false,
+      "fast": 0.0,
+      "medium": 0.0,
+      "long": 0.0,
+      "breakout": false,
+      "score": -999.0
+    },
+    "ETH": {
+      "ready": false,
+      "fast": 0.0,
+      "medium": 0.0,
+      "long": 0.0,
+      "breakout": false,
+      "score": -999.0
+    },
+    "SOL": {
+      "ready": false,
+      "fast": 0.0,
+      "medium": 0.0,
+      "long": 0.0,
+      "breakout": false,
+      "score": -999.0
+    },
+    "XRP": {
+      "ready": false,
+      "fast": 0.0,
+      "medium": 0.0,
+      "long": 0.0,
+      "breakout": false,
+      "score": -999.0
+    },
+    "LINK": {
+      "ready": false,
+      "fast": 0.0,
+      "medium": 0.0,
+      "long": 0.0,
+      "breakout": false,
+      "score": -999.0
+    },
+    "DOGE": {
+      "ready": false,
+      "fast": 0.0,
+      "medium": 0.0,
+      "long": 0.0,
+      "breakout": false,
+      "score": -999.0
+    },
+    "ADA": {
+      "ready": false,
+      "fast": 0.0,
+      "medium": 0.0,
+      "long": 0.0,
+      "breakout": false,
+      "score": -999.0
+    },
+    "AVAX": {
+      "ready": false,
+      "fast": 0.0,
+      "medium": 0.0,
+      "long": 0.0,
+      "breakout": false,
+      "score": -999.0
+    }
+  },
+  "real_money_enabled": false
+}
