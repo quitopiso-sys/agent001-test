@@ -1,0 +1,44 @@
+name: AGENT-003 no-fear paper trading
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "4,19,34,49 * * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: agent003-no-fear
+  cancel-in-progress: false
+
+jobs:
+  run-agent:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run AGENT-003 cycle
+        run: python3 agent003.py
+
+      - name: Persist AGENT-003 state and dashboard
+        run: |
+          git config user.name "agent003-bot"
+          git config user.email "agent003-bot@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to persist."
+          else
+            git commit -m "AGENT-003 cycle $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git pull --rebase
+            git push
+          fi
