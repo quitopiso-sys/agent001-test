@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: agent002-profit-hunter
+  group: paper-trading-repo-writes
   cancel-in-progress: false
 
 jobs:
