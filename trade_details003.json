@@ -130,5 +130,16 @@
     "qty": 2.346147746408551,
     "execution_price_chf": 9.9663928010475,
     "reason": "VELOCITY score +19.25; fast +4.04%; med +5.21%; long +15.18%"
+  },
+  {
+    "key": "2026-09-29T12:28:47.239263+00:00|ETH|BUY|23.14860410",
+    "timestamp": "2026-09-29T12:28:47.239263+00:00",
+    "symbol": "ETH",
+    "side": "BUY",
+    "notional_chf": 23.1486041,
+    "fee_chf": 0.13889162,
+    "qty": 0.010149672273697457,
+    "execution_price_chf": 2280.7242909693596,
+    "reason": "VELOCITY score +4.09; fast +0.76%; med +0.81%; long +3.04%"
   }
 ]
