@@ -9,5 +9,16 @@
     "qty": 0.002197443667710716,
     "execution_price_chf": 2238.376679355007,
     "reason": "MA edge +0.260%"
+  },
+  {
+    "key": "2026-09-29T01:29:29.313868+00:00|ETH|SELL|4.86169530",
+    "timestamp": "2026-09-29T01:29:29.313868+00:00",
+    "symbol": "ETH",
+    "side": "SELL",
+    "notional_chf": 4.8616953,
+    "fee_chf": 0.02917017,
+    "qty": 0.002197443667710716,
+    "execution_price_chf": 2212.432278213933,
+    "reason": "MA edge -0.213%"
   }
 ]
