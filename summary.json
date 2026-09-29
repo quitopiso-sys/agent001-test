@@ -1,21 +1,21 @@
 {
-  "timestamp": "2026-09-29T15:02:52.153720+00:00",
+  "timestamp": "2026-09-29T15:21:14.925016+00:00",
   "status": "NORMAL",
-  "equity_chf": 49.19446188158699,
-  "pnl_chf": -0.8055381184130113,
-  "cycle_count": 279,
-  "trade_count": 19,
+  "equity_chf": 49.04481424102764,
+  "pnl_chf": -0.9551857589723625,
+  "cycle_count": 280,
+  "trade_count": 20,
   "prices": {
-    "BTC": 69793.4489989,
-    "ETH": 2260.1757783
+    "BTC": 69448.21667412999,
+    "ETH": 2240.38133164
   },
   "signals": {
     "BTC": "SELL",
-    "ETH": "HOLD"
+    "ETH": "SELL"
   },
   "actions": {
-    "BTC": "SELL CHF 9.73",
-    "ETH": "HOLD"
+    "BTC": "WAIT",
+    "ETH": "SELL CHF 9.76"
   },
-  "fees_paid_chf": 0.7098695687932005
+  "fees_paid_chf": 0.7684019975383174
 }
