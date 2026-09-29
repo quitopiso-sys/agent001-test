@@ -174,5 +174,16 @@
     "qty": 0.01014967227500591,
     "execution_price_chf": 2261.8978512768413,
     "reason": "FAST REVERSAL -0.71%"
+  },
+  {
+    "key": "2026-09-29T14:49:39.837325+00:00|SOL|SELL|22.70182145",
+    "timestamp": "2026-09-29T14:49:39.837325+00:00",
+    "symbol": "SOL",
+    "side": "SELL",
+    "notional_chf": 22.70182145,
+    "fee_chf": 0.13621093,
+    "qty": 0.22604399526756014,
+    "execution_price_chf": 100.43098655696946,
+    "reason": "FAST REVERSAL -0.60%"
   }
 ]
