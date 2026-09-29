@@ -53,5 +53,16 @@
     "qty": 2.5801085238245323,
     "execution_price_chf": 8.751145834180246,
     "reason": "FAST REVERSAL -1.40%"
+  },
+  {
+    "key": "2026-09-29T05:47:19.763614+00:00|AVAX|BUY|22.28047630",
+    "timestamp": "2026-09-29T05:47:19.763614+00:00",
+    "symbol": "AVAX",
+    "side": "BUY",
+    "notional_chf": 22.2804763,
+    "fee_chf": 0.13368286,
+    "qty": 2.524351678216824,
+    "execution_price_chf": 8.826217239167999,
+    "reason": "VELOCITY score +6.38; fast +1.88%; med +1.84%; long +1.15%"
   }
 ]
