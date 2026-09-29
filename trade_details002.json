@@ -64,5 +64,16 @@
     "qty": 0.008493132779166555,
     "execution_price_chf": 2262.818268559547,
     "reason": "MOM EXIT -0.72%"
+  },
+  {
+    "key": "2026-09-29T15:10:08.536896+00:00|XRP|SELL|19.43438414",
+    "timestamp": "2026-09-29T15:10:08.536896+00:00",
+    "symbol": "XRP",
+    "side": "SELL",
+    "notional_chf": 19.43438414,
+    "fee_chf": 0.1166063,
+    "qty": 15.167968143955042,
+    "execution_price_chf": 1.2812780166435984,
+    "reason": "MOM EXIT -0.82%"
   }
 ]
