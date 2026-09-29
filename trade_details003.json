@@ -64,5 +64,16 @@
     "qty": 2.524351678216824,
     "execution_price_chf": 8.826217239167999,
     "reason": "VELOCITY score +6.38; fast +1.88%; med +1.84%; long +1.15%"
+  },
+  {
+    "key": "2026-09-29T06:27:14.081906+00:00|ADA|BUY|22.27043329",
+    "timestamp": "2026-09-29T06:27:14.081906+00:00",
+    "symbol": "ADA",
+    "side": "BUY",
+    "notional_chf": 22.27043329,
+    "fee_chf": 0.1336226,
+    "qty": 108.45105747835191,
+    "execution_price_chf": 0.20535007963795499,
+    "reason": "VELOCITY score +4.37; fast +0.97%; med +1.42%; long +1.24%"
   }
 ]
