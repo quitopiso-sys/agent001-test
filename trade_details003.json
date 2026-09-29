@@ -163,5 +163,16 @@
     "qty": 0.22604399523175261,
     "execution_price_chf": 101.13752779215,
     "reason": "VELOCITY score +4.74; fast +0.99%; med +1.09%; long +2.92%"
+  },
+  {
+    "key": "2026-09-29T14:21:41.633476+00:00|ETH|SELL|22.95752191",
+    "timestamp": "2026-09-29T14:21:41.633476+00:00",
+    "symbol": "ETH",
+    "side": "SELL",
+    "notional_chf": 22.95752191,
+    "fee_chf": 0.13774513,
+    "qty": 0.01014967227500591,
+    "execution_price_chf": 2261.8978512768413,
+    "reason": "FAST REVERSAL -0.71%"
   }
 ]
