@@ -31,5 +31,16 @@
     "qty": 1.760054304025051,
     "execution_price_chf": 12.8651746529735,
     "reason": "VELOCITY score +8.35; fast +1.46%; med +1.31%; long +9.29%"
+  },
+  {
+    "key": "2026-09-29T01:19:03.430885+00:00|LINK|SELL|22.44083024",
+    "timestamp": "2026-09-29T01:19:03.430885+00:00",
+    "symbol": "LINK",
+    "side": "SELL",
+    "notional_chf": 22.44083024,
+    "fee_chf": 0.13464498,
+    "qty": 1.760054303724563,
+    "execution_price_chf": 12.750078331396667,
+    "reason": "FAST REVERSAL -0.80%"
   }
 ]
