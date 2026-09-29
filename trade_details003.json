@@ -108,5 +108,27 @@
     "qty": 108.45105748738543,
     "execution_price_chf": 0.20886211370170094,
     "reason": "FAST REVERSAL -0.83%"
+  },
+  {
+    "key": "2026-09-29T12:01:22.861486+00:00|AVAX|SELL|24.35368254",
+    "timestamp": "2026-09-29T12:01:22.861486+00:00",
+    "symbol": "AVAX",
+    "side": "SELL",
+    "notional_chf": 24.35368254,
+    "fee_chf": 0.1461221,
+    "qty": 2.4460252466671446,
+    "execution_price_chf": 9.95643138728161,
+    "reason": "TAKE PROFIT +6.68%"
+  },
+  {
+    "key": "2026-09-29T12:01:22.861601+00:00|AVAX|BUY|23.38263001",
+    "timestamp": "2026-09-29T12:01:22.861601+00:00",
+    "symbol": "AVAX",
+    "side": "BUY",
+    "notional_chf": 23.38263001,
+    "fee_chf": 0.14029578,
+    "qty": 2.346147746408551,
+    "execution_price_chf": 9.9663928010475,
+    "reason": "VELOCITY score +19.25; fast +4.04%; med +5.21%; long +15.18%"
   }
 ]
