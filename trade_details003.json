@@ -97,5 +97,16 @@
     "qty": 2.446025246923859,
     "execution_price_chf": 9.337527471854001,
     "reason": "VELOCITY score +19.89; fast +5.28%; med +6.76%; long +7.30%"
+  },
+  {
+    "key": "2026-09-29T10:49:15.237262+00:00|ADA|SELL|22.65131710",
+    "timestamp": "2026-09-29T10:49:15.237262+00:00",
+    "symbol": "ADA",
+    "side": "SELL",
+    "notional_chf": 22.6513171,
+    "fee_chf": 0.1359079,
+    "qty": 108.45105748738543,
+    "execution_price_chf": 0.20886211370170094,
+    "reason": "FAST REVERSAL -0.83%"
   }
 ]
