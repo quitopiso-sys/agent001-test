@@ -53,5 +53,16 @@
     "qty": 15.167968145798458,
     "execution_price_chf": 1.2568782124770501,
     "reason": "PROFIT GATE score +3.09; fast +1.63%; slow +2.66%"
+  },
+  {
+    "key": "2026-09-29T14:12:39.874659+00:00|ETH|SELL|19.21841601",
+    "timestamp": "2026-09-29T14:12:39.874659+00:00",
+    "symbol": "ETH",
+    "side": "SELL",
+    "notional_chf": 19.21841601,
+    "fee_chf": 0.1153105,
+    "qty": 0.008493132779166555,
+    "execution_price_chf": 2262.818268559547,
+    "reason": "MOM EXIT -0.72%"
   }
 ]
