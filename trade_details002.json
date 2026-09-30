@@ -108,5 +108,16 @@
     "qty": 1.5602845821715317,
     "execution_price_chf": 12.110196508961412,
     "reason": "MOM EXIT -0.96%"
+  },
+  {
+    "key": "2026-09-30T14:30:39.571459+00:00|SOL|SELL|18.65865925",
+    "timestamp": "2026-09-30T14:30:39.571459+00:00",
+    "symbol": "SOL",
+    "side": "SELL",
+    "notional_chf": 18.65865925,
+    "fee_chf": 0.11195196,
+    "qty": 0.1881645719798932,
+    "execution_price_chf": 99.16138332349736,
+    "reason": "HARD STOP -2.00%"
   }
 ]
