@@ -218,5 +218,16 @@
     "qty": 286.1644084983731,
     "execution_price_chf": 0.0803444339240067,
     "reason": "FAST REVERSAL -0.94%"
+  },
+  {
+    "key": "2026-09-30T14:05:02.137718+00:00|ADA|SELL|22.84989313",
+    "timestamp": "2026-09-30T14:05:02.137718+00:00",
+    "symbol": "ADA",
+    "side": "SELL",
+    "notional_chf": 22.84989313,
+    "fee_chf": 0.13709936,
+    "qty": 108.87029939472716,
+    "execution_price_chf": 0.20988178830255588,
+    "reason": "FAST REVERSAL -0.89%"
   }
 ]
