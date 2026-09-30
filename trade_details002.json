@@ -75,5 +75,27 @@
     "qty": 15.167968143955042,
     "execution_price_chf": 1.2812780166435984,
     "reason": "MOM EXIT -0.82%"
+  },
+  {
+    "key": "2026-09-30T12:35:34.085386+00:00|LINK|BUY|19.09772565",
+    "timestamp": "2026-09-30T12:35:34.085386+00:00",
+    "symbol": "LINK",
+    "side": "BUY",
+    "notional_chf": 19.09772565,
+    "fee_chf": 0.11458635,
+    "qty": 1.5602845820203126,
+    "execution_price_chf": 12.23989897104,
+    "reason": "PROFIT GATE score +3.38; fast +1.87%; slow +2.75%"
+  },
+  {
+    "key": "2026-09-30T12:35:34.085451+00:00|SOL|BUY|19.04836961",
+    "timestamp": "2026-09-30T12:35:34.085451+00:00",
+    "symbol": "SOL",
+    "side": "BUY",
+    "notional_chf": 19.04836961,
+    "fee_chf": 0.11429022,
+    "qty": 0.18816457197768038,
+    "execution_price_chf": 101.2324977534,
+    "reason": "PROFIT GATE score +2.81; fast +1.46%; slow +2.47%"
   }
 ]
