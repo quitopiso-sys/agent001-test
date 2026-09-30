@@ -207,5 +207,16 @@
     "qty": 108.87029939572089,
     "execution_price_chf": 0.20736246345702,
     "reason": "VELOCITY score +5.46; fast +1.04%; med +2.36%; long +1.32%"
+  },
+  {
+    "key": "2026-09-30T13:49:05.466788+00:00|DOGE|SELL|22.99171741",
+    "timestamp": "2026-09-30T13:49:05.466788+00:00",
+    "symbol": "DOGE",
+    "side": "SELL",
+    "notional_chf": 22.99171741,
+    "fee_chf": 0.1379503,
+    "qty": 286.1644084983731,
+    "execution_price_chf": 0.0803444339240067,
+    "reason": "FAST REVERSAL -0.94%"
   }
 ]
