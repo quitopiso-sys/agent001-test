@@ -97,5 +97,16 @@
     "qty": 0.18816457197768038,
     "execution_price_chf": 101.2324977534,
     "reason": "PROFIT GATE score +2.81; fast +1.46%; slow +2.47%"
+  },
+  {
+    "key": "2026-09-30T14:09:19.391593+00:00|LINK|SELL|18.89535290",
+    "timestamp": "2026-09-30T14:09:19.391593+00:00",
+    "symbol": "LINK",
+    "side": "SELL",
+    "notional_chf": 18.8953529,
+    "fee_chf": 0.11337212,
+    "qty": 1.5602845821715317,
+    "execution_price_chf": 12.110196508961412,
+    "reason": "MOM EXIT -0.96%"
   }
 ]
