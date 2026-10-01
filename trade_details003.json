@@ -229,5 +229,27 @@
     "qty": 108.87029939472716,
     "execution_price_chf": 0.20988178830255588,
     "reason": "FAST REVERSAL -0.89%"
+  },
+  {
+    "key": "2026-10-01T03:01:32.379528+00:00|ADA|BUY|22.64396816",
+    "timestamp": "2026-10-01T03:01:32.379528+00:00",
+    "symbol": "ADA",
+    "side": "BUY",
+    "notional_chf": 22.64396816,
+    "fee_chf": 0.13586381,
+    "qty": 108.53659562697058,
+    "execution_price_chf": 0.20862979927825498,
+    "reason": "VELOCITY score +4.03; fast +0.78%; med +1.15%; long +1.94%"
+  },
+  {
+    "key": "2026-10-01T03:01:32.379618+00:00|DOGE|BUY|22.57447455",
+    "timestamp": "2026-10-01T03:01:32.379618+00:00",
+    "symbol": "DOGE",
+    "side": "BUY",
+    "notional_chf": 22.57447455,
+    "fee_chf": 0.13544685,
+    "qty": 283.12738370852054,
+    "execution_price_chf": 0.079732572152895,
+    "reason": "VELOCITY score +3.22; fast +0.57%; med +0.96%; long +1.35%"
   }
 ]
