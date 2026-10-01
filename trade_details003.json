@@ -273,5 +273,16 @@
     "qty": 108.53659560850176,
     "execution_price_chf": 0.20978922889872198,
     "reason": "FAST REVERSAL -0.95%"
+  },
+  {
+    "key": "2026-10-01T17:48:46.972904+00:00|BTC|BUY|22.41582939",
+    "timestamp": "2026-10-01T17:48:46.972904+00:00",
+    "symbol": "BTC",
+    "side": "BUY",
+    "notional_chf": 22.41582939,
+    "fee_chf": 0.13449498,
+    "qty": 0.0003168480062666827,
+    "execution_price_chf": 70746.31667757183,
+    "reason": "VELOCITY score +3.93; fast +0.78%; med +1.23%; long +1.48%"
   }
 ]
