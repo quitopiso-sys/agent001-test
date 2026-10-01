@@ -185,3 +185,4 @@ timestamp,cycle,equity_chf,pnl_chf,status,exposure_pct,actions
 2026-10-01T06:03:24.468759+00:00,184,48.14486600,-1.85513400,HUNTING,94.87,"{""BTC"":""HOLD"",""ETH"":""HOLD"",""SOL"":""HOLD"",""XRP"":""HOLD"",""LINK"":""HOLD"",""DOGE"":""HOLD"",""ADA"":""HOLD"",""AVAX"":""HOLD""}"
 2026-10-01T06:31:30.685349+00:00,185,48.20031802,-1.79968198,HUNTING,94.88,"{""BTC"":""HOLD"",""ETH"":""HOLD"",""SOL"":""HOLD"",""XRP"":""HOLD"",""LINK"":""HOLD"",""DOGE"":""HOLD"",""ADA"":""HOLD"",""AVAX"":""HOLD""}"
 2026-10-01T06:55:31.708907+00:00,186,48.24592030,-1.75407970,HUNTING,94.88,"{""BTC"":""HOLD"",""ETH"":""HOLD"",""SOL"":""HOLD"",""XRP"":""HOLD"",""LINK"":""HOLD"",""DOGE"":""HOLD"",""ADA"":""HOLD"",""AVAX"":""HOLD""}"
+2026-10-01T07:23:07.855413+00:00,187,47.47436708,-2.52563292,HUNTING,0.00,"{""BTC"":""HOLD"",""ETH"":""HOLD"",""SOL"":""HOLD"",""XRP"":""HOLD"",""LINK"":""HOLD"",""DOGE"":""SELL CHF 22.51"",""ADA"":""SELL CHF 22.77"",""AVAX"":""HOLD""}"
