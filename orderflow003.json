@@ -1,52 +1,70 @@
 {
   "agent_id": "003",
-  "generated_at": "2026-10-02T23:33:23.206703+00:00",
+  "generated_at": "2026-10-02T23:48:00.772198+00:00",
   "method": "public Binance order-flow entry gate",
   "symbols": {
-    "XRP": {
+    "ETH": {
       "ok": true,
-      "score": 0.22766180072204184,
-      "delta": 0.28364390245242543,
-      "book": 0.15923923194046186,
+      "score": 0.18495620461135964,
+      "delta": 0.05909911622172005,
+      "book": 0.33878153486536355,
       "trades": 500,
       "source": "Binance public depth+aggTrades",
-      "timestamp": "2026-10-02T23:33:19.163952+00:00"
+      "timestamp": "2026-10-02T23:47:54.034130+00:00"
+    },
+    "SOL": {
+      "ok": true,
+      "score": 0.23611326496774881,
+      "delta": 0.29946407432274746,
+      "book": 0.15868449797830597,
+      "trades": 500,
+      "source": "Binance public depth+aggTrades",
+      "timestamp": "2026-10-02T23:47:55.144629+00:00"
+    },
+    "XRP": {
+      "ok": true,
+      "score": 0.25003268592562605,
+      "delta": 0.4157357570234251,
+      "book": 0.04750671013942719,
+      "trades": 500,
+      "source": "Binance public depth+aggTrades",
+      "timestamp": "2026-10-02T23:47:56.282021+00:00"
     },
     "LINK": {
       "ok": true,
-      "score": 0.044132842644458325,
-      "delta": 0.02479736205465264,
-      "book": 0.06776509669866528,
+      "score": 0.15569427665442387,
+      "delta": 0.22794146904753143,
+      "book": 0.06739215261840348,
       "trades": 500,
       "source": "Binance public depth+aggTrades",
-      "timestamp": "2026-10-02T23:33:20.168474+00:00"
+      "timestamp": "2026-10-02T23:47:57.390899+00:00"
     },
     "DOGE": {
       "ok": true,
-      "score": 0.17074512523495583,
-      "delta": 0.2900335462679212,
-      "book": 0.02494816619466479,
+      "score": 0.19812258774405217,
+      "delta": 0.2763773564806145,
+      "book": 0.1024778703993648,
       "trades": 500,
       "source": "Binance public depth+aggTrades",
-      "timestamp": "2026-10-02T23:33:21.172467+00:00"
+      "timestamp": "2026-10-02T23:47:58.496351+00:00"
     },
     "ADA": {
       "ok": true,
-      "score": -0.02018940630837667,
-      "delta": -0.07508320535103807,
-      "book": 0.04690301474376504,
+      "score": 0.0372681464272904,
+      "delta": 0.06278758919376523,
+      "book": 0.006077716379376715,
       "trades": 500,
       "source": "Binance public depth+aggTrades",
-      "timestamp": "2026-10-02T23:33:22.197664+00:00"
+      "timestamp": "2026-10-02T23:47:59.655555+00:00"
     },
     "AVAX": {
       "ok": true,
-      "score": 0.27511314372982354,
-      "delta": 0.2419706926948229,
-      "book": 0.3156205838837132,
+      "score": 0.23241367904355556,
+      "delta": 0.2946859348553975,
+      "book": 0.1563031441624154,
       "trades": 500,
       "source": "Binance public depth+aggTrades",
-      "timestamp": "2026-10-02T23:33:23.201897+00:00"
+      "timestamp": "2026-10-02T23:48:00.766759+00:00"
     }
   }
 }
