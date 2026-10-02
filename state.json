@@ -8,15 +8,15 @@
   },
   "fees_paid_chf": 1.40567259266497,
   "trade_count": 40,
-  "cycle_count": 522,
+  "cycle_count": 523,
   "last_signal": {
     "BTC": "HOLD",
     "ETH": "BUY"
   },
   "status": "NORMAL",
-  "last_update": "2026-10-02T09:35:40.585865+00:00",
+  "last_update": "2026-10-02T09:49:49.997295+00:00",
   "last_prices_chf": {
-    "BTC": 71496.488439865,
-    "ETH": 2275.55064097
+    "BTC": 71568.537084775,
+    "ETH": 2276.8614641
   }
 }
