@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-10-02T23:36:53.373919+00:00",
+  "timestamp": "2026-10-02T23:50:27.121574+00:00",
   "agent_id": "AGENT-002",
   "status": "FAILED",
   "initial_capital_chf": 50.0,
   "equity_chf": 46.98449625304343,
   "pnl_chf": -3.0155037469565684,
-  "cycle_count": 382,
+  "cycle_count": 383,
   "trade_count": 22,
   "fees_paid_chf": 2.56499937969842,
   "profit_deadline_cycles": 300,
@@ -17,11 +17,11 @@
     "LINK"
   ],
   "prices": {
-    "BTC": 70025.90062497501,
-    "ETH": 2210.359592875,
-    "SOL": 98.2142647,
-    "XRP": 1.230744397,
-    "LINK": 11.410820325
+    "BTC": 70070.383764775,
+    "ETH": 2211.950644075,
+    "SOL": 98.34685230000001,
+    "XRP": 1.231407335,
+    "LINK": 11.440652535
   },
   "actions": {
     "BTC": "HOLD",
@@ -33,46 +33,54 @@
   "metrics": {
     "BTC": {
       "ready": true,
-      "fast": -0.02515335930560747,
-      "slow": 0.4337337377011474,
+      "fast": 0.04704343933923383,
+      "slow": 0.3945212286609934,
       "breakout": false,
-      "score": 0.21340019643002364
+      "score": 0.2640301151027802
     },
     "ETH": {
       "ready": true,
-      "fast": 0.06836908865361924,
-      "slow": 0.12615108689735255,
-      "breakout": false,
-      "score": 0.13775218644716314
+      "fast": 0.07685905174676932,
+      "slow": 0.130124565056855,
+      "breakout": true,
+      "score": 0.14842756252803957,
+      "orderflow_confirmed": true,
+      "orderflow_score": 0.37166507115755515,
+      "orderflow_delta": 0.7314305470416059,
+      "orderbook_imbalance": -0.0680482882562847
     },
     "SOL": {
       "ready": true,
-      "fast": 0.12962136754726128,
-      "slow": 0.4468942937818854,
-      "breakout": false,
-      "score": 0.37541322912729824
+      "fast": 0.15189873417722488,
+      "slow": 0.6995651183628437,
+      "breakout": true,
+      "score": 0.5366595492767889,
+      "orderflow_confirmed": true,
+      "orderflow_score": -0.04299217945495744,
+      "orderflow_delta": -0.2170898466705685,
+      "orderbook_imbalance": 0.16979385825301163
     },
     "XRP": {
       "ready": true,
-      "fast": 0.498544786286792,
-      "slow": 0.9252474537893907,
+      "fast": 0.41219001283872014,
+      "slow": 1.061370214586832,
       "breakout": true,
-      "score": 1.0074308858709569,
+      "score": 0.9959436308614777,
       "orderflow_confirmed": true,
-      "orderflow_score": 0.24968531237736447,
-      "orderflow_delta": 0.3477329928494834,
-      "orderbook_imbalance": 0.12984925846699685
+      "orderflow_score": 0.33845025112725385,
+      "orderflow_delta": 0.5628085099735437,
+      "orderbook_imbalance": 0.06423460142623277
     },
     "LINK": {
       "ready": true,
-      "fast": 0.27349766583888435,
-      "slow": 0.9308849695522481,
+      "fast": 0.4364906154517678,
+      "slow": 1.4118533738656236,
       "breakout": true,
-      "score": 0.7854843990926208,
+      "score": 1.2130099710778608,
       "orderflow_confirmed": true,
-      "orderflow_score": 0.1479058736457854,
-      "orderflow_delta": 0.2128672069718551,
-      "orderbook_imbalance": 0.06850868846947793
+      "orderflow_score": 0.12285495872471677,
+      "orderflow_delta": 0.17739448314698927,
+      "orderbook_imbalance": 0.05619553998638367
     }
   },
   "failed": true
