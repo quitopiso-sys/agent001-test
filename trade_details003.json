@@ -295,5 +295,27 @@
     "qty": 0.22558805738589324,
     "execution_price_chf": 98.88700199159999,
     "reason": "VELOCITY score +3.02; fast +0.51%; med +0.85%; long +1.40%"
+  },
+  {
+    "key": "2026-10-02T05:47:57.519737+00:00|BTC|SELL|22.59894420",
+    "timestamp": "2026-10-02T05:47:57.519737+00:00",
+    "symbol": "BTC",
+    "side": "SELL",
+    "notional_chf": 22.5989442,
+    "fee_chf": 0.13559367,
+    "qty": 0.00031684800623642934,
+    "execution_price_chf": 71324.24302880686,
+    "reason": "FAST REVERSAL -0.70%"
+  },
+  {
+    "key": "2026-10-02T05:47:57.519815+00:00|SOL|SELL|22.80141502",
+    "timestamp": "2026-10-02T05:47:57.519815+00:00",
+    "symbol": "SOL",
+    "side": "SELL",
+    "notional_chf": 22.80141502,
+    "fee_chf": 0.13680849,
+    "qty": 0.22558805735993936,
+    "execution_price_chf": 101.07545269392948,
+    "reason": "FAST REVERSAL -0.82%"
   }
 ]
