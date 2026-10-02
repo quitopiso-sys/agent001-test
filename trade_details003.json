@@ -317,5 +317,27 @@
     "qty": 0.22558805735993936,
     "execution_price_chf": 101.07545269392948,
     "reason": "FAST REVERSAL -0.82%"
+  },
+  {
+    "key": "2026-10-02T08:26:01.064727+00:00|DOGE|BUY|22.48007227",
+    "timestamp": "2026-10-02T08:26:01.064727+00:00",
+    "symbol": "DOGE",
+    "side": "BUY",
+    "notional_chf": 22.48007227,
+    "fee_chf": 0.13488043,
+    "qty": 278.602508462322,
+    "execution_price_chf": 0.08068869298439998,
+    "reason": "VELOCITY score +6.02; fast +1.62%; med +1.19%; long +3.04%"
+  },
+  {
+    "key": "2026-10-02T08:26:01.064864+00:00|ETH|BUY|22.41108166",
+    "timestamp": "2026-10-02T08:26:01.064864+00:00",
+    "symbol": "ETH",
+    "side": "BUY",
+    "notional_chf": 22.41108166,
+    "fee_chf": 0.13446649,
+    "qty": 0.009804865781811811,
+    "execution_price_chf": 2285.7101931546,
+    "reason": "VELOCITY score +4.12; fast +1.03%; med +0.92%; long +1.64%"
   }
 ]
