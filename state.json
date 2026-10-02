@@ -1,22 +1,22 @@
 {
   "agent_id": "AGENT-001",
   "mode": "TEST",
-  "cash_chf": 38.62232482606118,
+  "cash_chf": 33.80013657878021,
   "positions": {
     "BTC": 6.811384353521396e-05,
-    "ETH": 0.0021343645235442563
+    "ETH": 0.004263947938084213
   },
-  "fees_paid_chf": 1.3481323600408521,
-  "trade_count": 38,
-  "cycle_count": 489,
+  "fees_paid_chf": 1.376892926128015,
+  "trade_count": 39,
+  "cycle_count": 490,
   "last_signal": {
     "BTC": "HOLD",
-    "ETH": "HOLD"
+    "ETH": "BUY"
   },
   "status": "NORMAL",
-  "last_update": "2026-10-02T00:50:52.046097+00:00",
+  "last_update": "2026-10-02T01:02:27.136975+00:00",
   "last_prices_chf": {
-    "BTC": 70438.81207041,
-    "ETH": 2247.5947346999997
+    "BTC": 70437.50474832,
+    "ETH": 2249.75088198
   }
 }
