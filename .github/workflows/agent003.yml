@@ -27,8 +27,8 @@ jobs:
           python-version: "3.12"
       - name: Snapshot dashboard state
         run: python3 dashboard_enhancer.py pre 003
-      - name: Run AGENT-003 cycle
-        run: python3 agent003.py
+      - name: Run AGENT-003 cycle with order-flow gate
+        run: python3 orderflow_runner.py 003
       - name: Build rich dashboard
         run: python3 dashboard_enhancer.py post 003
       - name: Persist AGENT-003 state and dashboard
