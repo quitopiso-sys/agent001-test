@@ -1,61 +1,25 @@
 {
   "agent_id": "003",
-  "generated_at": "2026-10-02T22:47:00.124663+00:00",
+  "generated_at": "2026-10-02T22:59:36.350015+00:00",
   "method": "public Binance order-flow entry gate",
   "symbols": {
-    "SOL": {
-      "ok": true,
-      "score": 0.039027608975300554,
-      "delta": -0.07267610501340734,
-      "book": 0.17555437051705464,
-      "trades": 500,
-      "source": "Binance public depth+aggTrades",
-      "timestamp": "2026-10-02T22:46:51.819037+00:00"
-    },
     "XRP": {
       "ok": true,
-      "score": 0.15283918624471118,
-      "delta": 0.20951928277099396,
-      "book": 0.08356351271258776,
+      "score": 0.3200827261675472,
+      "delta": 0.41630522184448115,
+      "book": 0.20247745367351677,
       "trades": 500,
       "source": "Binance public depth+aggTrades",
-      "timestamp": "2026-10-02T22:46:53.406223+00:00"
-    },
-    "LINK": {
-      "ok": true,
-      "score": -0.06841034030878479,
-      "delta": -0.17481600506808556,
-      "book": 0.061641027730360634,
-      "trades": 500,
-      "source": "Binance public depth+aggTrades",
-      "timestamp": "2026-10-02T22:46:55.095096+00:00"
+      "timestamp": "2026-10-02T22:59:34.743225+00:00"
     },
     "DOGE": {
       "ok": true,
-      "score": 0.20493755646902348,
-      "delta": 0.3166851598277328,
-      "book": 0.06835715236393426,
+      "score": 0.09875452805393678,
+      "delta": 0.12290051541967482,
+      "book": 0.06924276571803474,
       "trades": 500,
       "source": "Binance public depth+aggTrades",
-      "timestamp": "2026-10-02T22:46:56.842334+00:00"
-    },
-    "ADA": {
-      "ok": true,
-      "score": 0.016622007501333184,
-      "delta": -0.07408271605796232,
-      "book": 0.1274833362960277,
-      "trades": 500,
-      "source": "Binance public depth+aggTrades",
-      "timestamp": "2026-10-02T22:46:58.449426+00:00"
-    },
-    "AVAX": {
-      "ok": true,
-      "score": 0.16536119444362102,
-      "delta": 0.15986842822871672,
-      "book": 0.1720745753729485,
-      "trades": 500,
-      "source": "Binance public depth+aggTrades",
-      "timestamp": "2026-10-02T22:47:00.119789+00:00"
+      "timestamp": "2026-10-02T22:59:36.345031+00:00"
     }
   }
 }
