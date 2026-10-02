@@ -1,34 +1,52 @@
 {
   "agent_id": "003",
-  "generated_at": "2026-10-02T23:17:31.107618+00:00",
+  "generated_at": "2026-10-02T23:33:23.206703+00:00",
   "method": "public Binance order-flow entry gate",
   "symbols": {
     "XRP": {
       "ok": true,
-      "score": -0.04384945464822186,
-      "delta": -0.24422115022970264,
-      "book": 0.20104928439581018,
+      "score": 0.22766180072204184,
+      "delta": 0.28364390245242543,
+      "book": 0.15923923194046186,
       "trades": 500,
       "source": "Binance public depth+aggTrades",
-      "timestamp": "2026-10-02T23:17:27.825854+00:00"
+      "timestamp": "2026-10-02T23:33:19.163952+00:00"
+    },
+    "LINK": {
+      "ok": true,
+      "score": 0.044132842644458325,
+      "delta": 0.02479736205465264,
+      "book": 0.06776509669866528,
+      "trades": 500,
+      "source": "Binance public depth+aggTrades",
+      "timestamp": "2026-10-02T23:33:20.168474+00:00"
     },
     "DOGE": {
       "ok": true,
-      "score": 0.18266459411746602,
-      "delta": 0.2765812611448498,
-      "book": 0.06787755663955249,
+      "score": 0.17074512523495583,
+      "delta": 0.2900335462679212,
+      "book": 0.02494816619466479,
       "trades": 500,
       "source": "Binance public depth+aggTrades",
-      "timestamp": "2026-10-02T23:17:29.368422+00:00"
+      "timestamp": "2026-10-02T23:33:21.172467+00:00"
     },
     "ADA": {
       "ok": true,
-      "score": 0.18916288498983136,
-      "delta": 0.24412956871144273,
-      "book": 0.12198138266341749,
+      "score": -0.02018940630837667,
+      "delta": -0.07508320535103807,
+      "book": 0.04690301474376504,
       "trades": 500,
       "source": "Binance public depth+aggTrades",
-      "timestamp": "2026-10-02T23:17:31.102708+00:00"
+      "timestamp": "2026-10-02T23:33:22.197664+00:00"
+    },
+    "AVAX": {
+      "ok": true,
+      "score": 0.27511314372982354,
+      "delta": 0.2419706926948229,
+      "book": 0.3156205838837132,
+      "trades": 500,
+      "source": "Binance public depth+aggTrades",
+      "timestamp": "2026-10-02T23:33:23.201897+00:00"
     }
   }
 }
