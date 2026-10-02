@@ -284,5 +284,16 @@
     "qty": 0.0003168480062666827,
     "execution_price_chf": 70746.31667757183,
     "reason": "VELOCITY score +3.93; fast +0.78%; med +1.23%; long +1.48%"
+  },
+  {
+    "key": "2026-10-02T00:52:24.324915+00:00|SOL|BUY|22.30772668",
+    "timestamp": "2026-10-02T00:52:24.324915+00:00",
+    "symbol": "SOL",
+    "side": "BUY",
+    "notional_chf": 22.30772668,
+    "fee_chf": 0.13384636,
+    "qty": 0.22558805738589324,
+    "execution_price_chf": 98.88700199159999,
+    "reason": "VELOCITY score +3.02; fast +0.51%; med +0.85%; long +1.40%"
   }
 ]
