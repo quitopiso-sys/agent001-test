@@ -1,6 +1,25 @@
 {
   "agent_id": "003",
-  "generated_at": "2026-10-03T05:00:26.087421+00:00",
+  "generated_at": "2026-10-03T05:26:54.678183+00:00",
   "method": "public Binance order-flow entry gate",
-  "symbols": {}
+  "symbols": {
+    "SOL": {
+      "ok": true,
+      "score": -0.07328561978901965,
+      "delta": -0.15275274663079771,
+      "book": 0.023840868573153574,
+      "trades": 500,
+      "source": "Binance public depth+aggTrades",
+      "timestamp": "2026-10-03T05:26:53.160810+00:00"
+    },
+    "LINK": {
+      "ok": true,
+      "score": 0.21805871271253385,
+      "delta": 0.2410638373551096,
+      "book": 0.18994133814938566,
+      "trades": 500,
+      "source": "Binance public depth+aggTrades",
+      "timestamp": "2026-10-03T05:26:54.674130+00:00"
+    }
+  }
 }
