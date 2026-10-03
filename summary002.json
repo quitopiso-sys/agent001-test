@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-10-03T01:39:38.495172+00:00",
+  "timestamp": "2026-10-03T01:52:02.104909+00:00",
   "agent_id": "AGENT-002",
   "status": "FAILED",
   "initial_capital_chf": 50.0,
   "equity_chf": 46.98449625304343,
   "pnl_chf": -3.0155037469565684,
-  "cycle_count": 389,
+  "cycle_count": 390,
   "trade_count": 22,
   "fees_paid_chf": 2.56499937969842,
   "profit_deadline_cycles": 300,
@@ -17,11 +17,11 @@
     "LINK"
   ],
   "prices": {
-    "BTC": 70116.23497212,
-    "ETH": 2221.3443864349997,
-    "SOL": 98.890843975,
-    "XRP": 1.23615626415,
-    "LINK": 11.5362984555
+    "BTC": 70104.328299075,
+    "ETH": 2220.200948105,
+    "SOL": 98.725128275,
+    "XRP": 1.23400196005,
+    "LINK": 11.537955612500001
   },
   "actions": {
     "BTC": "HOLD",
@@ -33,46 +33,38 @@
   "metrics": {
     "BTC": {
       "ready": true,
-      "fast": 0.04862260453801781,
-      "slow": 0.1690434863855783,
+      "fast": -0.061024748050997335,
+      "slow": 0.07581842518329385,
       "breakout": false,
-      "score": 0.14159652205008588
+      "score": -0.01932461420018572
     },
     "ETH": {
       "ready": true,
-      "fast": 0.2620396648201906,
-      "slow": 0.7383009319430922,
+      "fast": 0.10185126165360714,
+      "slow": 0.664504347789574,
       "breakout": false,
-      "score": 0.6681051773888913,
-      "orderflow_veto": true,
-      "orderflow_score": -0.3381601912758135,
-      "orderflow_delta": -0.4192738959996823,
-      "orderbook_imbalance": -0.23902121883552935
+      "score": 0.4673286529378729
     },
     "SOL": {
       "ready": true,
-      "fast": 0.15649315965358124,
-      "slow": 1.1840440899841154,
-      "breakout": true,
-      "score": 0.8077174091448447,
-      "orderflow_confirmed": true,
-      "orderflow_score": -0.005621716969847401,
-      "orderflow_delta": -0.005484953338292335,
-      "orderbook_imbalance": -0.005788872519525815
+      "fast": 0.11469267782775461,
+      "slow": 0.9032644080757546,
+      "breakout": false,
+      "score": 0.6114881022694196
     },
     "XRP": {
       "ready": true,
-      "fast": 0.13632054512517922,
-      "slow": 1.3059943742431246,
+      "fast": 0.008802020837528346,
+      "slow": 1.0402403372418823,
       "breakout": false,
-      "score": 0.8546174509588979
+      "score": 0.5809342063205636
     },
     "LINK": {
       "ready": true,
-      "fast": 0.21899540931797912,
-      "slow": 2.3182467463498613,
+      "fast": 0.3634428417752744,
+      "slow": 2.047936275575224,
       "breakout": false,
-      "score": 1.4940311198104028
+      "score": 1.4898077933416476
     }
   },
   "failed": true
