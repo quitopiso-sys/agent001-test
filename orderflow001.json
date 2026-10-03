@@ -1,16 +1,16 @@
 {
   "agent_id": "001",
-  "generated_at": "2026-10-03T01:17:27.370008+00:00",
+  "generated_at": "2026-10-03T01:30:58.976714+00:00",
   "method": "public Binance order-flow entry gate",
   "symbols": {
     "ETH": {
       "ok": true,
-      "score": 0.32716692046805934,
-      "delta": 0.48070084400325114,
-      "book": 0.1395143472583804,
+      "score": 0.22183559199105493,
+      "delta": 0.5570084389503956,
+      "book": -0.18782010984813932,
       "trades": 500,
       "source": "Binance public depth+aggTrades",
-      "timestamp": "2026-10-03T01:17:27.364116+00:00"
+      "timestamp": "2026-10-03T01:30:58.972079+00:00"
     }
   }
 }
