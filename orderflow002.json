@@ -1,43 +1,6 @@
 {
   "agent_id": "002",
-  "generated_at": "2026-10-02T23:50:27.126791+00:00",
+  "generated_at": "2026-10-03T00:07:12.828951+00:00",
   "method": "public Binance order-flow entry gate",
-  "symbols": {
-    "ETH": {
-      "ok": true,
-      "score": 0.37166507115755515,
-      "delta": 0.7314305470416059,
-      "book": -0.0680482882562847,
-      "trades": 500,
-      "source": "Binance public depth+aggTrades",
-      "timestamp": "2026-10-02T23:50:22.584572+00:00"
-    },
-    "SOL": {
-      "ok": true,
-      "score": -0.04299217945495744,
-      "delta": -0.2170898466705685,
-      "book": 0.16979385825301163,
-      "trades": 500,
-      "source": "Binance public depth+aggTrades",
-      "timestamp": "2026-10-02T23:50:24.014183+00:00"
-    },
-    "XRP": {
-      "ok": true,
-      "score": 0.33845025112725385,
-      "delta": 0.5628085099735437,
-      "book": 0.06423460142623277,
-      "trades": 500,
-      "source": "Binance public depth+aggTrades",
-      "timestamp": "2026-10-02T23:50:25.732175+00:00"
-    },
-    "LINK": {
-      "ok": true,
-      "score": 0.12285495872471677,
-      "delta": 0.17739448314698927,
-      "book": 0.05619553998638367,
-      "trades": 500,
-      "source": "Binance public depth+aggTrades",
-      "timestamp": "2026-10-02T23:50:27.121228+00:00"
-    }
-  }
+  "symbols": {}
 }
