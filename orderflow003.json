@@ -1,34 +1,6 @@
 {
   "agent_id": "003",
-  "generated_at": "2026-10-03T02:21:32.192767+00:00",
+  "generated_at": "2026-10-03T02:56:57.344904+00:00",
   "method": "public Binance order-flow entry gate",
-  "symbols": {
-    "LINK": {
-      "ok": true,
-      "score": -0.021390200032891035,
-      "delta": -0.18493949968452555,
-      "book": 0.17850338843021785,
-      "trades": 500,
-      "source": "Binance public depth+aggTrades",
-      "timestamp": "2026-10-03T02:21:28.991329+00:00"
-    },
-    "ADA": {
-      "ok": false,
-      "score": -0.1747271347114029,
-      "delta": -0.13870650438812815,
-      "book": -0.21875234955096087,
-      "trades": 500,
-      "source": "Binance public depth+aggTrades",
-      "timestamp": "2026-10-03T02:21:30.597370+00:00"
-    },
-    "AVAX": {
-      "ok": true,
-      "score": 0.15011099134343625,
-      "delta": 0.18159649295737662,
-      "book": 0.11162871159306463,
-      "trades": 500,
-      "source": "Binance public depth+aggTrades",
-      "timestamp": "2026-10-03T02:21:32.188830+00:00"
-    }
-  }
+  "symbols": {}
 }
