@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-10-02T23:59:50.239417+00:00",
+  "timestamp": "2026-10-03T00:27:29.756765+00:00",
   "agent_id": "AGENT-003",
   "status": "HUNTING",
   "initial_capital_chf": 50.0,
   "equity_chf": 46.44887063802621,
   "pnl_chf": -3.5511293619737927,
-  "cycle_count": 295,
+  "cycle_count": 296,
   "trade_count": 38,
   "fees_paid_chf": 5.193939486520396,
   "exposure_pct": 0.0,
@@ -21,14 +21,14 @@
     "AVAX"
   ],
   "prices": {
-    "BTC": 70018.92671308,
-    "ETH": 2210.78001056,
-    "SOL": 98.23626696,
-    "XRP": 1.2299419254,
-    "LINK": 11.4269260935,
-    "DOGE": 0.076999800005,
-    "ADA": 0.20260401481999998,
-    "AVAX": 8.946990643
+    "BTC": 70037.346013135,
+    "ETH": 2213.16631664,
+    "SOL": 98.57598414499999,
+    "XRP": 1.2332562394,
+    "LINK": 11.507298208,
+    "DOGE": 0.077231801985,
+    "ADA": 0.20429431496,
+    "AVAX": 9.01493408
   },
   "actions": {
     "BTC": "HOLD",
@@ -43,67 +43,95 @@
   "metrics": {
     "BTC": {
       "ready": true,
-      "fast": 0.014149815052255654,
-      "medium": -0.024747635560151693,
-      "long": -1.2263968341976406,
+      "fast": 0.009385579450094106,
+      "medium": 0.02283812584895628,
+      "long": -1.1414469550388495,
       "breakout": false,
-      "score": -0.48983670214514774
+      "score": -0.41684661315641414
     },
     "ETH": {
       "ready": true,
-      "fast": 0.061035198303516225,
-      "medium": 0.216270567136001,
-      "long": -1.3047154479007061,
-      "breakout": false,
-      "score": -0.19575225507795224
+      "fast": 0.12435282319782637,
+      "medium": 0.24394454577525426,
+      "long": -1.1443404861935735,
+      "breakout": true,
+      "score": 0.7100434330539123,
+      "orderflow_confirmed": true,
+      "orderflow_score": 0.23349745181149542,
+      "orderflow_delta": 0.2807218514865502,
+      "orderbook_imbalance": 0.17577874109753952
     },
     "SOL": {
       "ready": true,
-      "fast": 0.08996218586112548,
-      "medium": 0.369614099512261,
-      "long": -1.1760019119586351,
-      "breakout": false,
-      "score": 0.06114526927883279
+      "fast": 0.35136216029525436,
+      "medium": 0.6514382402707186,
+      "long": -1.0622196521558491,
+      "breakout": true,
+      "score": 1.5590022679398368,
+      "orderflow_confirmed": true,
+      "orderflow_score": 0.25639384588766384,
+      "orderflow_delta": 0.33216963230391094,
+      "orderbook_imbalance": 0.1637789958233618
     },
     "XRP": {
       "ready": true,
-      "fast": 0.21143865498758352,
-      "medium": 0.5917734950200648,
-      "long": -1.7616209429108132,
-      "breakout": false,
-      "score": 0.2677146968333899
+      "fast": 0.2918770928813208,
+      "medium": 0.8264462809917328,
+      "long": -1.3355767086737358,
+      "breakout": true,
+      "score": 1.5175943647086159,
+      "orderflow_confirmed": true,
+      "orderflow_score": 0.507160376103997,
+      "orderflow_delta": 0.7293666672872199,
+      "orderbook_imbalance": 0.23557490910228002
     },
     "LINK": {
       "ready": true,
-      "fast": 0.4182611830344074,
-      "medium": 1.036310270034324,
-      "long": -3.123119970622512,
-      "breakout": false,
-      "score": 0.5399324112472526
+      "fast": 0.8528188141021076,
+      "medium": 1.490792166033339,
+      "long": -2.5640021558497095,
+      "breakout": true,
+      "score": 2.700265169077249,
+      "orderflow_confirmed": true,
+      "orderflow_score": -0.001573018480269417,
+      "orderflow_delta": -0.21383374139117473,
+      "orderbook_imbalance": 0.2578567539663926
     },
     "DOGE": {
       "ready": true,
-      "fast": 0.4751930553641648,
-      "medium": 1.3058640423152967,
-      "long": -3.1852268110293402,
-      "breakout": false,
-      "score": 0.8871208175590573
+      "fast": 0.593013249819685,
+      "medium": 1.458117544043036,
+      "long": -2.0122269641579593,
+      "breakout": true,
+      "score": 2.4206506080552854,
+      "orderflow_confirmed": true,
+      "orderflow_score": 0.08882022669041101,
+      "orderflow_delta": 0.09483814744810352,
+      "orderbook_imbalance": 0.0814649902087868
     },
     "ADA": {
       "ready": true,
-      "fast": 0.8589839573535096,
-      "medium": 1.693812083445878,
-      "long": -2.8987899613840296,
-      "breakout": false,
-      "score": 2.0804672221285836
+      "fast": 1.2659813533643316,
+      "medium": 2.277346828721938,
+      "long": -2.2048410319577494,
+      "breakout": true,
+      "score": 4.374176851994635,
+      "orderflow_confirmed": true,
+      "orderflow_score": 0.1297211323513745,
+      "orderflow_delta": 0.2779687190165769,
+      "orderbook_imbalance": -0.05147036246165065
     },
     "AVAX": {
       "ready": true,
-      "fast": 1.1502261095152733,
-      "medium": 1.4067355586518282,
-      "long": -2.6810766946020914,
-      "breakout": false,
-      "score": 2.4047118779384835
+      "fast": 1.2166527103245173,
+      "medium": 1.8631214305776522,
+      "long": -2.3132583749732705,
+      "breakout": true,
+      "score": 3.8277929591724753,
+      "orderflow_confirmed": true,
+      "orderflow_score": 0.032613364128993134,
+      "orderflow_delta": -0.09789690084928047,
+      "orderbook_imbalance": 0.19212591021354977
     }
   },
   "real_money_enabled": false

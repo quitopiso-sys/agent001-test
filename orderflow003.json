@@ -1,6 +1,70 @@
 {
   "agent_id": "003",
-  "generated_at": "2026-10-02T23:59:50.244357+00:00",
+  "generated_at": "2026-10-03T00:27:29.761439+00:00",
   "method": "public Binance order-flow entry gate",
-  "symbols": {}
+  "symbols": {
+    "ETH": {
+      "ok": true,
+      "score": 0.23349745181149542,
+      "delta": 0.2807218514865502,
+      "book": 0.17577874109753952,
+      "trades": 500,
+      "source": "Binance public depth+aggTrades",
+      "timestamp": "2026-10-03T00:27:22.177630+00:00"
+    },
+    "SOL": {
+      "ok": true,
+      "score": 0.25639384588766384,
+      "delta": 0.33216963230391094,
+      "book": 0.1637789958233618,
+      "trades": 500,
+      "source": "Binance public depth+aggTrades",
+      "timestamp": "2026-10-03T00:27:23.390712+00:00"
+    },
+    "XRP": {
+      "ok": true,
+      "score": 0.507160376103997,
+      "delta": 0.7293666672872199,
+      "book": 0.23557490910228002,
+      "trades": 500,
+      "source": "Binance public depth+aggTrades",
+      "timestamp": "2026-10-03T00:27:24.813902+00:00"
+    },
+    "LINK": {
+      "ok": true,
+      "score": -0.001573018480269417,
+      "delta": -0.21383374139117473,
+      "book": 0.2578567539663926,
+      "trades": 500,
+      "source": "Binance public depth+aggTrades",
+      "timestamp": "2026-10-03T00:27:26.032208+00:00"
+    },
+    "DOGE": {
+      "ok": true,
+      "score": 0.08882022669041101,
+      "delta": 0.09483814744810352,
+      "book": 0.0814649902087868,
+      "trades": 500,
+      "source": "Binance public depth+aggTrades",
+      "timestamp": "2026-10-03T00:27:27.324805+00:00"
+    },
+    "ADA": {
+      "ok": true,
+      "score": 0.1297211323513745,
+      "delta": 0.2779687190165769,
+      "book": -0.05147036246165065,
+      "trades": 500,
+      "source": "Binance public depth+aggTrades",
+      "timestamp": "2026-10-03T00:27:28.539431+00:00"
+    },
+    "AVAX": {
+      "ok": true,
+      "score": 0.032613364128993134,
+      "delta": -0.09789690084928047,
+      "book": 0.19212591021354977,
+      "trades": 500,
+      "source": "Binance public depth+aggTrades",
+      "timestamp": "2026-10-03T00:27:29.756473+00:00"
+    }
+  }
 }
