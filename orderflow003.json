@@ -1,61 +1,16 @@
 {
   "agent_id": "003",
-  "generated_at": "2026-10-03T01:19:19.202392+00:00",
+  "generated_at": "2026-10-03T01:46:46.851596+00:00",
   "method": "public Binance order-flow entry gate",
   "symbols": {
-    "ETH": {
-      "ok": false,
-      "score": -0.32405408842965444,
-      "delta": -0.6766229904070974,
-      "book": 0.10686345843166475,
-      "trades": 500,
-      "source": "Binance public depth+aggTrades",
-      "timestamp": "2026-10-03T01:19:11.344337+00:00"
-    },
-    "SOL": {
-      "ok": false,
-      "score": -0.10214842193069726,
-      "delta": -0.08629294707691132,
-      "book": -0.12152733564088009,
-      "trades": 500,
-      "source": "Binance public depth+aggTrades",
-      "timestamp": "2026-10-03T01:19:12.918879+00:00"
-    },
     "LINK": {
-      "ok": false,
-      "score": -0.1763236065447772,
-      "delta": -0.2611640802527536,
-      "book": -0.07262969423502817,
-      "trades": 500,
-      "source": "Binance public depth+aggTrades",
-      "timestamp": "2026-10-03T01:19:14.506783+00:00"
-    },
-    "DOGE": {
       "ok": true,
-      "score": -0.0004060997394241409,
-      "delta": -0.012415724450650232,
-      "book": 0.014272330463185528,
+      "score": 0.047093530604625455,
+      "delta": -0.012154274200324621,
+      "book": 0.11950751425511999,
       "trades": 500,
       "source": "Binance public depth+aggTrades",
-      "timestamp": "2026-10-03T01:19:16.093926+00:00"
-    },
-    "ADA": {
-      "ok": false,
-      "score": -0.16024502523426024,
-      "delta": -0.13530406398769182,
-      "book": -0.19072842231339937,
-      "trades": 500,
-      "source": "Binance public depth+aggTrades",
-      "timestamp": "2026-10-03T01:19:17.636805+00:00"
-    },
-    "AVAX": {
-      "ok": true,
-      "score": 0.062344659420863785,
-      "delta": 0.1763553707611053,
-      "book": -0.07700176555054253,
-      "trades": 500,
-      "source": "Binance public depth+aggTrades",
-      "timestamp": "2026-10-03T01:19:19.197190+00:00"
+      "timestamp": "2026-10-03T01:46:46.846709+00:00"
     }
   }
 }
