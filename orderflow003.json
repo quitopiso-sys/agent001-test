@@ -1,16 +1,61 @@
 {
   "agent_id": "003",
-  "generated_at": "2026-10-03T11:24:09.326629+00:00",
+  "generated_at": "2026-10-03T14:48:06.365051+00:00",
   "method": "public Binance order-flow entry gate",
   "symbols": {
-    "AVAX": {
+    "BTC": {
       "ok": true,
-      "score": 0.16068364726112055,
-      "delta": 0.2761272897774604,
-      "book": 0.01958586196337178,
+      "score": 0.5502128795781747,
+      "delta": 0.3860670296028043,
+      "book": 0.7508355851036272,
       "trades": 500,
       "source": "Binance public depth+aggTrades",
-      "timestamp": "2026-10-03T11:24:09.321322+00:00"
+      "timestamp": "2026-10-03T14:48:00.795635+00:00"
+    },
+    "SOL": {
+      "ok": true,
+      "score": 0.11619189908426236,
+      "delta": 0.10581807121890953,
+      "book": 0.1288710220308047,
+      "trades": 500,
+      "source": "Binance public depth+aggTrades",
+      "timestamp": "2026-10-03T14:48:02.012285+00:00"
+    },
+    "XRP": {
+      "ok": true,
+      "score": 0.12065694807613402,
+      "delta": 0.15556057742556295,
+      "book": 0.07799695664905419,
+      "trades": 500,
+      "source": "Binance public depth+aggTrades",
+      "timestamp": "2026-10-03T14:48:03.084513+00:00"
+    },
+    "DOGE": {
+      "ok": true,
+      "score": 0.1352685664246287,
+      "delta": 0.18314665159575094,
+      "book": 0.07675090677103483,
+      "trades": 500,
+      "source": "Binance public depth+aggTrades",
+      "timestamp": "2026-10-03T14:48:04.180590+00:00"
+    },
+    "ADA": {
+      "ok": true,
+      "score": 0.15159935186747764,
+      "delta": 0.26129370274369884,
+      "book": 0.01752847857431834,
+      "trades": 500,
+      "source": "Binance public depth+aggTrades",
+      "timestamp": "2026-10-03T14:48:05.285389+00:00"
+    },
+    "AVAX": {
+      "ok": true,
+      "score": -0.050065500045073395,
+      "delta": -0.012469439788021395,
+      "book": -0.09601624035924806,
+      "trades": 500,
+      "source": "Binance public depth+aggTrades",
+      "timestamp": "2026-10-03T14:48:06.359576+00:00"
     }
   }
 }
